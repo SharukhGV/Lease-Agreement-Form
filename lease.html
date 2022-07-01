@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lease.css">
+    <script src="./lease-form.js"></script>
+
+    <title>Lease Form Agreement</title>
+
+<script>
+
+
+
+</script>
+    
+</head>
+
+
+<body>
+
+
+
+    <div class ="container">
+
+
+        <div id="heading1"><h1>Lease Agreement Form</h1></div>
+        <div id=instructions><h3>This form is a lease agreement form for a landlord or tenant looking to make a mutual agreement on rental terms. This form is a fill in the blanks kind of form. When you are done filling in the blanks to the best of your ability, click the gray "Generate Lease Agreement Form" buttom at the bottom of the form. </h3></div>
+
+    <main>
+
+
+<form id = "lease-agreement" name="lease-agreement" onsubmit="submitLeaseForm(event)"> 
+<section id="lease-inputs">
+
+<div class="input-group"> 
+<label for="landLordName">Landlord's Name:</label>
+<input type="text" id="landLordName"  name="landLordName" required>
+</div>
+
+<div class="input-group"> 
+    <label for="Rent">Rent Amount Each Month (USE NUMBERS ONLY, not Words or Special Characters!)</label>
+    <input type="text" id="Rent" name ="Rent" required>
+    </div>
+
+    <div class="input-group"> 
+        <label for="Address">Address of Property</label>
+        <input type="text" id="Address" name="Address" required>
+        </div>  
+
+        <div class="input-group"> 
+            <label for="propertyType">Property Type:(Private House, Apartment Complex, etc.)</label>
+            <input type="text" id="propertyType" name="propertyType" required>
+            </div>   
+
+
+            <div class="input-group"> 
+                <label for="tenants">Responsible Tenant Name:</label>
+                <input type="text" id="tenants" name="tenants" required>
+                </div>   
+
+                  
+
+                    <div class="input-group"> 
+                        <label for="LeaseStart">Start of Lease (Date)</label>
+                        <input type="text" id="LeaseStart" name="LeaseStart" required>
+                        </div>   
+
+                        <div class="input-group"> 
+                            <label for="LeaseEnd">End of Lease (Date)</label>
+                            <input type="text" id="LeaseEnd" name="LeaseEnd" required>
+                            </div>  
+                            
+                            <div class="input-group"> 
+                                <label for="Security">Security Deposit:(USE NUMBERS ONLY, not Words or Special Characters!)</label>
+                                <input type="text" id="Security" name="Security" required>
+                                </div>   
+
+                                <div class="input-group"> 
+                                    <label for="SecurityAmount">Security Deposit Amount of Months:(USE NUMBERS ONLY, not Words or Special Characters!)</label>
+                                    <input type="text" id="SecurityAmount" name="SecurityAmount" required>
+                                    </div>  
+
+                                    <div class="input-group"> 
+                                        <label for="RentAmountMonths">Amount of Months Advanced Rent to be Collected (USE NUMBERS ONLY, not Words or Special Characters!)</label>
+                                        <input type="text" id="RentAmountMonths" name="RentAmountMonths" required>
+                                        </div> 
+
+                                    <div class="input-group"> 
+                                        <label for="RentIncrease">Rent Increase Amount:</label>
+                                        <input type="text" id="RentIncrease" name="RentIncrease" required>
+                                        </div>  
+
+                                        <div class="input-group"> 
+                                            <label for="WhenRentIncrease">When will Rent Increase?</label>
+                                            <input type="text" id="WhenRentIncrease" name="WhenRentIncrease" required>
+                                            </div> 
+
+                                            <div class="input-group"> 
+                                                <label for="RentDue">When will rent be due? (Use only this format: 1st, 15th, 20th, etc.)</label>
+                                                <input type="text" id="RentDue" name="RentDue" required>
+                                                </div> 
+
+                                                <div class="input-group"> 
+                                                    <label for="Name1">Tenant Name</label>
+                                                    <input type="text" id="Name1" name="Name1" required>
+                                                    </div> 
+
+                                                    <div class="input-group"> 
+                                                        <label for="Name2">Tenant Name</label>
+                                                        <input type="text" id="Name2" name="Name2">
+                                                        </div> 
+
+                                                        <div class="input-group"> 
+                                                            <label for="Name3">Tenant Name</label>
+                                                            <input type="text" id="Name3" name="Name3">
+                                                            </div> 
+
+                                                            <div class="input-group"> 
+                                                                <label for="Name4">Tenant Name</label>
+                                                                <input type="text" id="Name4" name="Name4">
+                                                                </div> 
+
+                                                                <div class="input-group"> 
+                                                                    <label for="Name5">Tenant Name</label>
+                                                                    <input type="text" id="Name5" name="Name5">
+                                                                    </div> 
+
+                                                                    <div class="input-group"> 
+                                                                        <label for="Name6">Tenant Name</label>
+                                                                        <input type="text" id="Name6" name="Name6">
+                                                                        </div> 
+
+                                                                        <div class="input-group"> 
+                                                                            <label for="Name7">Tenant Name</label>
+                                                                            <input type="text" id="Name7" name="Name7">
+                                                                            </div> 
+
+                                                                            <div class="input-group"> 
+                                                                                <label for="Acond">Fee for one Air Conditioner (put N/A if not applicable)</label>
+                                                                                <input type="text" id="Acond" name="Acond" >
+                                                                                </div> 
+
+                                                                                <div class="input-group"> 
+                                                                                    <label for="Acond2">Fee for additional Air Conditioners(put N/A if not applicable)</label>
+                                                                                    <input type="text" id="Acond2" name="Acond2">
+                                                                                    </div> 
+
+                                                                                    <div class="input-group"> 
+                                                                                        <label for="park">Monthly Parking Fee</label>
+                                                                                        <input type="text" id="park" name="park" required>
+                                                                                        </div> 
+
+                                                                                        <div class="input-group"> 
+                                                                                            <label for="garbageDays">Garbage Days</label>
+                                                                                            <input type="text" id="garbageDays" name="garbageDays" required>
+                                                                                            </div> 
+
+                                                                                            <div class="input-group"> 
+                                                                                                <label for="recycledays">Garbage and Recycle Days</label>
+                                                                                                <input type="text" id="recycledays" name="recycledays" required>
+                                                                                                </div> 
+
+                                                                                                <div class="input-group"> 
+                                                                                                <label for="noticemoving">Notice Time in Months before tenant moves</label>
+                                                                                                <input type="text" id="noticemoving" name="noticemoving" required >
+                                                                                                </div> 
+
+                                                                                                <div class="input-group"> 
+                                                                                                    <div >
+                                                                                                        <input type="radio" id="huey" name="drone" value="Utilities except for electricity is included. Tenant is responsible for paying electricity bills."
+                                                                                                               checked>
+                                                                                                        <label for="huey">Utilities except for electricity is included. Tenant is responsible for paying electricity bills.</label>
+                                                                                                      </div> 
+
+                                                                                            
+
+                                                                                                      <div>
+                                                                                                        <input type="radio" id="louie" name="drone" value='All Utility is included in the rent, however, if an air-conditioner is used, there will an additional fee for each air-conditioner used.'>
+                                                                                                        
+                                                                                                        <label for="louie">All Utility is included in the rent, however, if an air-conditioner is used, there will an additional Fee for each air-conditioner used.</label>
+                                                                                                        
+                                                                                                      </div>
+
+                                                                                                    </div> 
+
+<section id="buttonsubmit">
+<button type="submit">Generate Lease Agreement Form</button>
+</section>
+</form>
+<script>
+    
+    
+    </script>
+
+</main>
+
+</div>
+<div id="formattingforform">
+<div id="storySection" > </div>
+
+</div>
+
+</body>
+</html>
