@@ -1,5 +1,4 @@
 
-
 const submitLeaseForm = (event) =>{
     event.preventDefault();
 
@@ -45,7 +44,7 @@ const story = `<p> <div><h2>LEASE AGREEMENT</h2></div>
 <div>On <span class="inserted text">${userSubmission.LeaseEnd}</span>, rent will increase by $<span class="inserted text">${userSubmission.RentIncrease}</span></div>
 
 <div><h3>Advanced Security:</h3></div>
-<div><span class="inserted text">${userSubmission.SecurityAmount}</span> months security and <span class="inserted text">${userSubmission.RentAmountMonths}</span> month(s) rent will be collected at the time of this lease signature. The total for this is <span class="inserted text">${((Number(userSubmission.SecurityAmount)+Number(userSubmission.Rent))*(Number(userSubmission.RentAmountMonths)+userSubmission.SecurityAmount)*.10).toFixed(2)}</span>.</div>
+<div><span class="inserted text">${userSubmission.SecurityAmount}</span> months security and <span class="inserted text">${userSubmission.RentAmountMonths}</span> month(s) rent will be collected at the time of this lease signature. The total for this is <span class="inserted text">${((Number(userSubmission.Security)*Number((userSubmission.SecurityAmount))+(Number(userSubmission.Rent)*Number((userSubmission.RentAmountMonths))))).toFixed(2)}</span> USD.</div>
 <div>This is due on the first day this lease is signed, and the lease starts taking in effect starting <span class="inserted text">${userSubmission.LeaseStart}</span>.</div>
 
 <div><h3>TERMS OF USE: </h3></div>
@@ -115,5 +114,6 @@ const story = `<p> <div><h2>LEASE AGREEMENT</h2></div>
 
 storySection.insertAdjacentHTML("afterend", story);
 
-}
 
+
+}
